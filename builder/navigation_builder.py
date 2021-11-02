@@ -2,6 +2,7 @@ from .journey_builder import JourneyBuilder
 from navigation import Navigation
 
 
+# Construction of complex objects from its representations
 class NavigationBuilder(JourneyBuilder):
 
     def __init__(self):

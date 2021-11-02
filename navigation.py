@@ -1,8 +1,8 @@
-class Navigation():
+class Navigation(): 
 
     def __init__(
         self,
-        transport="Kind of transportation",
+        transport="Transportation method",
         origin="Current location",
         destiny="Desired location",
         arrival=0
@@ -15,8 +15,7 @@ class Navigation():
         # 10, 20, 30 or any time in minutes
         self.arrival = arrival
 
-    def construction(self):
-        # Returns a string describing the journey
+    def construction(self):  # Returns a string describing the journey
 
         return f"La ruta más rápida {self.transport} "\
             f"desde {self.origin} hasta {self.destiny}, "\

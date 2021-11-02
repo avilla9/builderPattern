@@ -1,6 +1,7 @@
 from abc import ABCMeta, abstractmethod
 
 
+# Definition of mothods to build complex objects
 class JourneyBuilder(metaclass=ABCMeta):
 
     @staticmethod
