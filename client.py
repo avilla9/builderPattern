@@ -1,13 +1,14 @@
-"House Builder Example Code"
+from director.bus import BusDirector
+from director.walk import WalkDirector
+from director.car import CarDirector
 
-from igloo_director import IglooDirector
-from castle_director import CastleDirector
-from houseboat_director import HouseBoatDirector
+origin = 'Colonia Nápoles'
+destiny = 'El Ángel de la Independencia'
 
-IGLOO = IglooDirector.construct()
-CASTLE = CastleDirector.construct()
-HOUSEBOAT = HouseBoatDirector.construct()
+WALK = WalkDirector.construct(origin, destiny)
+CAR = CarDirector.construct(origin, destiny)
+BUS = BusDirector.construct(origin, destiny)
 
-print(IGLOO.construction())
-print(CASTLE.construction())
-print(HOUSEBOAT.construction())
+print(WALK.construction())
+print(CAR.construction())
+print(BUS.construction())
